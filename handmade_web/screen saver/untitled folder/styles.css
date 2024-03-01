@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden; /* Hide vertical scrollbar */
+}
+
+body {
+    background-color: #ffff66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffff66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%; /* Adjust this according to your image size */
+    height: 100%; /* Adjust this according to your image size */
+    overflow: visible; /* Allow images to overflow container */
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+
+}
+.eyes-container{
+width: 100%;
+height: 100%;
+
+z-index: 4;
+}
+
+.eyes {
+    animation: scrollDown 150s linear infinite; /* Loop the animation infinitely */
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Ensure image one fits container but is fully visible */
+    z-index: 4;
+}
+
+.head-container{
+    background-image:url("head_1.svg");
+    background-size: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    animation: scrollRight 100s linear infinite;
+}
+
+/* Animation for image 2 */
+.head {
+    animation: scrollRight 200s linear infinite; /* Loop the animation infinitely */
+    object-fit: contain;
+    z-index: 3;
+}
+
+.glob-container{
+    background-image:url("glob.svg");
+    background-size: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    animation: scrollLeft 200s linear infinite;
+}
+/* Animation for image 3 */
+.glob {
+    animation: scrollLeft 20s linear infinite; /* Loop the animation infinitely */
+    object-fit: contain;
+    z-index: 2;
+
+}
+
+.bg{
+    z-index: 1;
+}
+
+/* Adjust z-index to stack images accordingly */
+/* .image:nth-child(1) { z-index: 4; }
+.image:nth-child(2) { z-index: 3; }
+.image:nth-child(3) { z-index: 2; }
+.image:nth-child(4) { z-index: 1; } */
+
+@keyframes scrollDown {
+    0% { transform: translateY(0); }
+    100% {transform: translateY(-100vh); } /* Adjust this value based on image height and number of images */
+}
+
+/* @keyframes scrollRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100vw); } 
+} */
+
+/* @keyframes scrollLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100vw);
+} */
+
+@keyframes scrollRight {
+    0% {background-position: 0;}
+    100% {background-position: 100vw 0;} /* Adjust this value based on image width and number of images */
+}
+
+@keyframes scrollLeft {
+    0% {background-position: 0;}
+    100% {background-position: -100vw 0;} /* Adjust this value based on image width and number of images */
+}
