@@ -1,0 +1,37 @@
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    color: whitesmoke;
+}
+
+.content-box{
+    background-color: rgb(34, 33, 33);
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    padding:20px;
+    border: solid 10px rgba(132, 206, 13, 0.863);
+    width: 200px;
+    height: 200px;
+}
+
+.border-box{
+    background-color: rgb(132, 206, 13, 0.863);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    padding:20px;
+    border: dashed 5px rgba(132, 206, 13, 0.863);
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.png-stic{
+    width: 400px;
+}
+
+.center{
+    text-align: center;
+}

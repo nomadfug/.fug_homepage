@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+body{
+    background-color: rgb(0, 0, 55);
+    margin: 0%;
+}
+.square{
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    height: 200px;
+    animation-name: life;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    /* animation-iteration-count: infinite; */
+    animation-direction: alternate;
+    /* animation-timing-function:cubic-bezier(.5,.9,56,04); */
+    /* animation-fill-mode: both; */
+
+    animation: life 10s 2s infiniteboth
+}
+
+@keyframes life {
+    0%{background-color: blueviolet;
+    }
+    6%{
+        background-color: rgb(114, 37, 187);
+    }
+    70%{
+        background-color: rgb(65, 21, 106);
+    }
+    100%{
+        background-color: rgb(26, 8, 43);
+    }
+}
+
+.containter{
+background-color: rgb(35, 206, 206);
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+width: 100vw;
+height: 100vh;
+
+}
+
+.circle{
+    background-color: rgb(212, 255, 0);
+    width: 20vw; 
+    height: 20vw;
+    border-radius: 100%;
+    animation: pluse 2s infinite alternate ease-in;
+    
+}
+
+.box{background-color: rgb(248, 128, 0);
+    width: 20vw; 
+    height: 20vw;
+    animation: spin 2s infinite linear;
+}
+.mover{
+    background-color: red;
+    width: 20vw;
+    height: 4vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    animation: move 3s infinite;
+
+}
+
+@keyframes pluse{
+    0%{background-color: rgb(212, 255, 0);
+       transform: scale(1);
+    }
+
+    100%{background-color: rgb(248, 128, 0);
+        transform: scale(2);
+    }
+    
+    
+}
+
+@keyframes spin{
+    0%{background-color: rgb(248, 128, 0);
+        transform: rotate(0)
+    }
+    100%{background-color: rgb(212, 255, 0);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move{
+   0%{
+    left: -20vw;
+    transform: skew(0deg)
+   }    
+
+   50%{
+    transform: skew(30deg);
+   }
+   
+   100%{
+    left: 100vw;
+    transform: skew(0deg);
+    
+   }
+   
+}

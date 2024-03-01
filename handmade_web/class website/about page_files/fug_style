@@ -1,0 +1,9 @@
+{
+    color: greenyellow;
+    font-size: 30px
+}
+
+h1{
+    color: orange;
+    text-decoration: underline
+}
