@@ -110,3 +110,8 @@ nav ul li a {
     text-wrap: wrap;
     display: flex;
   }
+
+  .read_more{
+    position: relative;
+    
+  }
