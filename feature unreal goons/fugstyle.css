@@ -57,24 +57,13 @@ p{
     width: 60px;
     /* background-color: #ffffff; */
     object-fit: contain;
-    z-index: 5000;
-    
-
-    
+    z-index: 5000;  
 }
 .logo{  
     height: 60px; /* Adjust height as needed */
     width: 60px;
     background-image:url("logo.jpg");
     object-fit: contain;
-    
-
-    
-}
-
-nav ul {
-   
-    
 }
 
 nav ul li {
@@ -186,6 +175,7 @@ body, html {
     /* Adjust this according to your image size */
     overflow: visible; /* Allow images to overflow container */
     animation: pluse 10s infinite alternate ease-in-out;
+    overflow: visible
 }
 
 .image {
@@ -198,37 +188,47 @@ body, html {
 
 
 }
+/* .eyes{
+    animation: scrollDown 200s linear infinite; Loop the animation infinitely
+    object-fit: cover;
+    z-index: 5;
+    overflow: visible;
+}
+
 .eyes-container{
-width: 100%;
-height: 100%;
-
-z-index: 4;
-}
-
-.eyes {
-    animation: scrollDown 50s linear infinite; /* Loop the animation infinitely */
-    width: auto;
+    background-image:url("eyes.svg");
+    background-size: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100vh;
-    object-fit: contain; /* Ensure image one fits container but is fully visible */
-    z-index: 4;
-}
+    z-index: 5;
+    animation: scrollDown 100s linear infinite;
+    
+
+} */
 
 .head-container{
     background-image:url("heads.svg");
     background-size: 100vw;
-    /* position: absolute; */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     z-index: 3;
     animation: scrollRight 100s linear infinite;
+    
 }
 
+h1{
+    z-index: 60000;
+}
 /* Animation for image 2 */
 .head {
     animation: scrollRight 200s linear infinite; /* Loop the animation infinitely */
-    object-fit: contain;
+    object-fit: cover;
     z-index: 3;
 }
 
@@ -246,8 +246,8 @@ z-index: 4;
 /* Animation for image 3 */
 .glob {
     animation: scrollLeft 20s linear infinite; /* Loop the animation infinitely */
-    object-fit: contain;
-    z-index: 5;
+    object-fit: cover;
+    z-index: 2;
 
 }
 
