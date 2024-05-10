@@ -1,0 +1,112 @@
+/* Update background color */
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+
+}
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        z-index: 101;
+        top:100;
+        width: 100vw;
+        
+        
+    }
+
+header {
+    background-color: #333;
+    color: #ff7900;
+    padding: 20px;
+    display: flexbox;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3000;
+}
+.logo_container{
+    height: 60px; /* Adjust height as needed */
+    width: 60px;
+    /* background-color: #ffffff; */
+    object-fit: contain;
+    z-index: 5000;
+}
+.logo{  
+    height: 60px; /* Adjust height as needed */
+    width: 60px;
+    background-image:url("logo.jpg");
+    object-fit: contain;
+}
+
+.cta-button {
+    font-family: Helvetica;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 10px;
+    
+}
+    
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-family:  Helvetica, sans-serif;
+    font-size: x-large;
+    stroke-width: 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Add styles for blog page */
+.blog-post-grid {
+    display: flex;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between; /* Adjust as needed */
+  }
+  
+  .blog-post {
+    width: 30%; /* Adjust as needed */
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flexbox;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+    min-width: 250px;
+    justify-content: center;
+    position: relative;
+    /* min-width: 50px; */
+  }
+  
+  .blog-post h2 {
+    margin-top: 0;
+    text-wrap: wrap;
+  }
+  
+  .blog-post p {
+    margin-bottom: 0;
+    text-wrap: wrap;
+    display: flex;
+  }
+
+  p{
+    text-wrap: wrap;
+    display: flex;
+  }

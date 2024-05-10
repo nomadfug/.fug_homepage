@@ -1,0 +1,71 @@
+/* Update background color */
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        z-index: 101;
+    }
+
+header {
+    background-color: #333;
+    color: #ff7900;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+    
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    stroke-width: 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Add styles for blog page */
+.blog-post {
+    margin-bottom: 30px;
+    background-color: #ff7900; /* Set background color for individual blog posts */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.blog-post h2 {
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    margin-bottom: 15px;
+}
+
+.blog-post a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}

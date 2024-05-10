@@ -1,0 +1,38 @@
+.carousel {
+    position: relative;
+    width: 100% vw;
+    height: 100% vh;
+    margin: 0 auto;
+  }
+  
+  .carousel-container {
+    display: flex;
+    overflow: hidden;
+    image-size:80%
+    
+    
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+    image-size: 80% vw;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  

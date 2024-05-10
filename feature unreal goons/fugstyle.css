@@ -1,0 +1,292 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-image: url(background-100.jpg);
+    background-repeat: no-repeat;
+    object-fit: fill;
+    background-color: #ff7900;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    z-index: 101; 
+    /* background-image: url(background-100.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover; */
+    z-index: 4000;
+    
+}
+
+header {
+    background-color: #333;
+    color: #ff7900;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3000;
+    
+}
+
+
+h1{
+    padding: 0px;
+    font-size: 1000 px; 
+    z-index: 2000;
+    color: #ffffff;
+    justify-content: center;
+}
+
+p{
+    z-index: 1000;
+    color: #ffffff;
+    padding: 5px;
+
+}
+.logo_container{
+    height: 60px; /* Adjust height as needed */
+    width: 60px;
+    /* background-color: #ffffff; */
+    object-fit: contain;
+    z-index: 5000;
+    
+
+    
+}
+.logo{  
+    height: 60px; /* Adjust height as needed */
+    width: 60px;
+    background-image:url("logo.jpg");
+    object-fit: contain;
+    
+
+    
+}
+
+nav ul {
+   
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    stroke-width: 5px;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+   columns: 100 px;
+   font-family:helvetica, bold ;
+   font-size:xx-large;
+
+}
+
+.column-container p {
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.hero {
+    height: 70 px;
+    padding: 20px;
+}
+
+.cta-button {
+    font-family: Helvetica;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
+
+footer {
+    background-color: #ff7900;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%vw
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-icons li img {
+    width: 30px;
+    height: 30px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: visible; /* Hide vertical scrollbar */
+}
+
+.body1 {
+
+    background-color: #ff7900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+}
+
+.container1 {
+    background-color: #ff7900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    width: 100%; /* Adjust this according to your image size */
+    /* Adjust this according to your image size */
+    overflow: visible; /* Allow images to overflow container */
+    animation: pluse 10s infinite alternate ease-in-out;
+}
+
+.image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+
+
+}
+.eyes-container{
+width: 100%;
+height: 100%;
+
+z-index: 4;
+}
+
+.eyes {
+    animation: scrollDown 50s linear infinite; /* Loop the animation infinitely */
+    width: auto;
+    height: 100vh;
+    object-fit: contain; /* Ensure image one fits container but is fully visible */
+    z-index: 4;
+}
+
+.head-container{
+    background-image:url("heads.svg");
+    background-size: 100vw;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    animation: scrollRight 100s linear infinite;
+}
+
+/* Animation for image 2 */
+.head {
+    animation: scrollRight 200s linear infinite; /* Loop the animation infinitely */
+    object-fit: contain;
+    z-index: 3;
+}
+
+.glob-container{
+    background-image:url("glob.svg");
+    background-size: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    animation: scrollLeft 75s linear infinite;
+}
+/* Animation for image 3 */
+.glob {
+    animation: scrollLeft 20s linear infinite; /* Loop the animation infinitely */
+    object-fit: contain;
+    z-index: 5;
+
+}
+
+.bg{
+    z-index: 1;
+}
+
+/* Adjust z-index to stack images accordingly */
+/* .image:nth-child(1) { z-index: 4; }
+.image:nth-child(2) { z-index: 3; }
+.image:nth-child(3) { z-index: 2; }
+.image:nth-child(4) { z-index: 1; } */
+
+@keyframes scrollDown {
+    0% { transform: translateY(0); }
+    100% {transform: translateY(-100vh); } /* Adjust this value based on image height and number of images */
+}
+
+/* @keyframes scrollRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100vw); } 
+} */
+
+/* @keyframes scrollLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100vw);
+} */
+
+@keyframes scrollRight {
+    0% {background-position: 0;}
+    100% {background-position: 100vw 0;} /* Adjust this value based on image width and number of images */
+}
+
+@keyframes scrollLeft {
+    0% {background-position: 0;}
+    100% {background-position: -100vw 0;} /* Adjust this value based on image width and number of images */
+}
+
+@keyframes pluse {
+    0% {transform: scale(1)}
+    100% {transform: scale(2)}
+}

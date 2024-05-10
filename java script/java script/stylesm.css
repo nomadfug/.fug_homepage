@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .drag {
+    cursor: pointer;
+  }
+  
+  .drag img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .dragging {
+    opacity: 0.5; /* Example style when dragging */
+  }
